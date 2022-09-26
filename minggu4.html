@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title p align="center"> Video HTML </title>
+</head>
+<style>
+video {
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: ;
+	margin-right:150px;
+	margin-left:150px;
+}
+</style>
+<body>
+<center>
+	<!--dibuat tanggal 13 sep 2022-->
+	
+	<center>
+	<h1 align="center">Video Lucu</h1>
+	<hr width="500 style="2">
+	
+	<button onclick= "playVid()" type="button">PlayVideo</button>
+	<button onclick= "pauseVid()" type="button">PauseVideo</button>
+	<button onclick= "ControlsPlayVid()" type="button">Controls ON</button>
+	<button onclick= "ControlsStopVid()" type="button">Controls OFF</button>
+	</center>
+	
+	<p>
+	<video id="myVideo" width="260">
+		<source src="rehanbaik.mp4" type="video/mp4">
+	</video>
+	</p>
+</center>
+<script>
+	var vid = document.getElementById("myVideo");
+	
+	function playVid(){
+		vid.play();
+		
+	}
+	function pauseVid() {
+		vid.pause();
+	}
+	
+	function ControlsPlayVid() {
+		vid.controls=true;
+	}
+	function ControlsStopVid() {
+		vid.controls = false;
+	}
+</script>	
+
+</body>
+</html>
