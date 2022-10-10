@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(115, 255, 254);
+    color: aquamarine;
+}
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(154, 205, 49);
+  }
+  
+  .all-browsers > h1, .browser {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .browser {
+    background: rgb(70, 33, 33);
+  }
+  
+  .browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
