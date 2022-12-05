@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Mengisi data ke array</title> 
+</head> 
+<body> 
+    <script> 
+        // membuat array 
+        var products = ["Senter", "Radio", "Antena", "Obeng", "Odol", "Pesawat"]; 
+ 
+        // menambahkan tv ke dalam array products 
+        products.push("Televisi"); 
+
+        // hapus data dari depan 
+        products.shift();
+ 
+        // hapus radi0
+        products.splice(2, 1);    
+        
+        //mengubah isi array
+        products[5] = "kocak";  
+
+        //menampilkan array
+        document.write (products);
+    </script> 
+</body> 
+</html>

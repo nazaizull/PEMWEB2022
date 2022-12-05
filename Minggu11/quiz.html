@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pembelajaran Mandiri Minggu 11</title>
+</head>
+<body>
+    <h3>Data Nama Mahasiswa</h3>
+    <form action="javasript:void(0);" method="post" onsubmit="t">
+        <input type="text" id="TambahNama" placeholder="Tambah Nama MHS">
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+        <!-- Dinamis dari javascript-->
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Daftar Nama</td>
+            </tr>
+        </thead>
+        <tbody id="DaftarMhs">
+            <!-- Dinamis dari javascript-->
+        </tbody>
+    </table>
+    <script>
+        var app = new function () {
+            this.el = document.getElementById('DaftarMhs');
+            this.mhs = ['Tono', 'Tini', 'Tanoe', 'Budi'];
+            
+            this.barisAll = function () {
+                var data = '';
+
+                if(this.mhs.length > 0 ){
+                    for(i = 0; i < this.mhs.length; i++) {
+                        data +='<tr>';
+                        data +='<td>'+ this.mhs[i] +'</td>';
+                        data +='</tr>';
+                    }
+                }
+                return this.el.innerHTML = data;
+            }
+
+            this.countD = function() {
+                //hitung jumlah data
+            }
+
+            this.addD = function () {
+                //tambah data
+            }
+
+ 
+        }
+        app.barisAll();
+    </script>
+</body>
+</html>
