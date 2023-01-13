@@ -1,0 +1,144 @@
+.wrapper {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.logo img {
+  width: 50%;
+  align-items: center;
+}
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+}
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;   
+  top: 0;
+  background-color: darkgray;
+  z-index: 1;
+  border-bottom:1px solid #364f6b;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  
+}
+
+nav ul li a {
+  color:#850000;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  ul li a {
+    color: white;
+  }
+
+.nav {
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.nav-link
+{
+  color: black;
+  width: 100%;
+  float: right;
+}
+
+footer
+{
+  background-color: black;
+}
+.copy
+{
+  color: white;
+
+}
+footer ul li a
+{
+  background-color:  black;
+  color: white;
+}
+
+.loader-container{
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+.loader-container img {
+  width: 35rem;
+}
+.loader-container.fade-Out{
+  top: 110%;
+  opacity: 0;
+}
+
